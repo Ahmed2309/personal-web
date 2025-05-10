@@ -7,7 +7,7 @@ export default function Header() {
         <a href="/" className="text-xl font-bold">
           Ahmed Mahmood
         </a>
-        <a className="text-2xl font-semibold pointer-events-none">
+        <a className="text-2xl font-semibold pointer-events-none text-center">
           Fresh Graduate Software Engineer
         </a>
         <br />
