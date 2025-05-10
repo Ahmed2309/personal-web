@@ -1,0 +1,275 @@
+/* Set the background color for the entire web page */
+body {
+  background-color: #CFDEF3; /* Light blue background */
+  color: #2c3e50; /* Default dark text for readability */
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+}
+
+/* Add custom styles for headings and links */
+h2 {
+  color: #1a1a1a; /* Darker text for headings */
+  font-family: var(--font-sans);
+}
+#about p {
+  color: #3a3a3a; /* Slightly lighter text for paragraphs */
+  line-height: 1.6; /* Improved line height for readability */
+}
+
+a {
+  color: #2c3e50; /* Darker text for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Experience Section */
+#experience h3 {
+  color: #ffffff; /* Dark text for section titles */
+  font-family: var(--font-sans);
+  margin-bottom: 0.5rem;
+}
+
+#experience ul {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  color: #3a3a3a; /* Slightly lighter text for list items */
+}
+
+/* Experience Section Styling */
+#experience h2 {
+  color: #1a1a1a;
+  font-family: var(--font-sans);
+  margin-bottom: 1rem;
+}
+
+#experience .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#experience .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+#experience ul li {
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  font-size: 0.875rem;
+}
+
+#experience ul li:hover {
+  background-color: #e5e7eb;
+  cursor: pointer;
+}
+
+/* Hover effect for experience cards */
+#experience a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Section */
+#skills h2 {
+  color: #1a1a1a; /* Darker text for section headings */
+  font-family: var(--font-sans);
+  margin-bottom: 1rem;
+}
+
+#skills ul {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  color: #3a3a3a; /* Slightly lighter text for list items */
+}
+
+#skills p {
+  color: #4b5563; /* Default gray for light mode */
+}
+
+.dark #skills p {
+  color: #9ca3af; /* Lighter gray for dark mode */
+}
+
+/* Layout container for two-column layout */
+.layout-container {
+  display: flex;
+  flex-direction: column; /* Default to column layout for mobile */
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .layout-container {
+    flex-direction: row; /* Switch to row layout for larger screens */
+  }
+}
+
+/* Left-side header container (static) */
+.header-container {
+  width: 100%; /* Full width for mobile */
+  background-color: var(--background);
+  border-bottom: 1px solid var(--foreground); /* Change to bottom border for mobile */
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #1a1a1a;
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    width: 30%; /* Fixed width for larger screens */
+    border-bottom: none;
+    border-right: 1px solid var(--foreground); /* Change to right border for larger screens */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 2rem 1rem;
+  }
+}
+
+/* Right-side content container (scrollable) */
+.content-container {
+  width: 100%; /* Full width for mobile */
+  margin-left: 0;
+  padding: 1rem;
+  overflow-y: auto;
+  height: auto; /* Adjust height for mobile */
+}
+
+@media (min-width: 768px) {
+  .content-container {
+    width: 70%; /* Fixed width for larger screens */
+    margin-left: 30%; /* Matches the width of the header */
+    height: 100vh;
+    padding: 2rem;
+  }
+}
+
+/* Style for links in the header */
+.header-container a {
+  color:  rgba(255, 255, 255, 0.95); /* Darker text for links in the header */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.header-container a:hover {
+  text-decoration: underline;
+}
+
+/* Projects Section */
+#projects h2 {
+  color: #1a1a1a; /* Darker text for project section heading */
+  font-family: var(--font-sans);
+  margin-bottom: 1rem;
+}
+
+#projects a {
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#projects a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Technologies List */
+#projects ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive grid */
+  gap: 0.5rem; /* Spacing between items */
+}
+
+#projects ul li {
+  background-color: #ffffff; /* White background for badges */
+  color: #2c3e50; /* Dark text for better readability */
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add slight shadow for better visibility */
+}
+
+/* Project Card Styling */
+.project-card {
+  background-color: rgba(255, 255, 255, 0.95); /* Slightly opaque white background */
+  border-radius: 0.5rem; /* Rounded corners */
+  transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  padding: 1rem;
+  color: #2c3e50; /* Dark text for readability */
+  position: relative; /* For hover effects */
+  overflow: hidden; /* To ensure hover effects stay within the card */
+}
+
+.project-card:hover {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* Add a deeper shadow on hover */
+  transform: translateY(-10px) scale(1.03); /* Slight lift and scale on hover */
+  background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Add a gradient background */
+  color: #ffffff; /* Change text color to white */
+}
+#projects h3 {
+  color: #ffffff; /* Dark text for section titles */
+  font-family: var(--font-sans);
+  margin-bottom: 0.5rem;
+}
+/* Add a subtle overlay effect on hover */
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1); /* Subtle dark overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover::before {
+  opacity: 1; /* Show overlay on hover */
+}
+
+/* Text Colors for Projects */
+.project-card h3 {
+  color: #ffffff; /* White text for project titles */
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.project-card p {
+  color: #f0f0f0; /* Light text for descriptions */
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.project-card ul li {
+  color: #ffffff; /* White text for technology badges */
+  background-color: #3498db; /* Blue background for badges */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for badges */
+}
+
+.project-card ul li:nth-child(2n) {
+  background-color: #e74c3c; /* Red background for alternating badges */
+}
+
+.project-card ul li:nth-child(3n) {
+  background-color: #2ecc71; /* Green background for alternating badges */
+}
+
+.project-card:hover ul li {
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent white background on hover */
+  color: #ffffff; /* Ensure text remains white */
+}
+
