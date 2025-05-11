@@ -10,8 +10,7 @@ export default function AboutSection() {
         mobile app development (Ionic Angular, Flutter), backend systems (PHP
         Laravel), and UI/UX design, I bring creativity and technical precision
         to every project I work on.
-        <br />
-        Whether it's building a pet care app, a budget shopping platform, or
+        <br /> I thrive on challenges and love to push the boundaries of what’s
         crafting smart features like profile setup wizards and interactive
         progress indicators, I’m driven by solving real-world problems through
         clean, user-friendly code.
